@@ -1,0 +1,19 @@
+---
+description: Keep braintrailz.md updated with durable design decisions as the project evolves
+alwaysApply: true
+---
+
+# Keep the Braintrailz trail current
+
+`tech-ecosystem-map/references/braintrailz.md` is the trail map for this skill — why decisions were made, not a changelog or session transcript.
+
+When building or changing this project:
+
+- After a durable design choice (geography-sourcing method, layout/offset conventions, verification checklist, rescan discipline), add or update a short section in `braintrailz.md`
+- Capture the *why* and the failure it prevents; skip back-and-forth and housekeeping detail
+- Match the existing voice: trail markers, reusable patterns, no fence
+- If `tech-ecosystem-map/` source changed in a way that should ship, rebuild `tech-ecosystem-map.skill` (zip of `tech-ecosystem-map/`)
+
+This project is held to its own standard: every fact on a map traces to a live source, and every layout change is verified structurally (counts, balanced tags, pin distance) before it ships.
+
+Do not dump full conversations into the trail. Prefer one tight section per decision.
